@@ -172,7 +172,9 @@ inherit cargo
 
 DESCRIPTION="yofi is a minimalistic menu for Wayland-based compositors"
 HOMEPAGE="https://github.com/l4l/yofi"
-SRC_URI="$(cargo_crate_uris ${CRATES})"
+SRC_URI="
+https://github.com/l4l/${PN}/archive/${PV}.tar.gz -> ${P}.tar.gz
+$(cargo_crate_uris ${CRATES})"
 RESTRICT="mirror"
 LICENSE="MIT"
 SLOT="0"
