@@ -175,7 +175,8 @@ DESCRIPTION="yofi is a minimalistic menu for Wayland-based compositors"
 HOMEPAGE="https://github.com/l4l/yofi"
 SRC_URI="
 https://github.com/l4l/${PN}/archive/${PV}.tar.gz -> ${P}.tar.gz
-$(cargo_crate_uris ${CRATES})"
+$(cargo_crate_uris ${CRATES})
+https://github.com/l4l/raqote/archive/borrowed-buffer.tar.gz -> raqote.crate"
 RESTRICT="mirror"
 LICENSE="MIT"
 SLOT="0"
