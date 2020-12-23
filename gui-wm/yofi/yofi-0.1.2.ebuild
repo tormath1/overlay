@@ -94,6 +94,7 @@ rand-0.7.3
 rand_chacha-0.2.2
 rand_core-0.5.1
 rand_hc-0.2.0
+raqote-0.8.0
 rctree-0.3.3
 redox_syscall-0.1.57
 redox_users-0.3.5
