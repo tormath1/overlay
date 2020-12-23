@@ -184,3 +184,11 @@ IUSE=""
 
 DEPEND=""
 RDEPEND=""
+
+src_compile() {
+	# hack to remove custom raqote
+	# it should be removed once the branch 'borrowed-feature'
+	# will be merged
+	sed -i '/raqote/d' Cargo.toml
+	cargo_src_compile
+}
